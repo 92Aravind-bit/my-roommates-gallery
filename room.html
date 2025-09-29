@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Roommates</title>
+<style>
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364); /* professional dark gradient */
+    color: #f1f1f1;
+}
+header {
+    background-color: #1f4e79;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+nav {
+    background-color: #2a6f9e;
+    padding: 10px;
+    text-align: center;
+}
+nav a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav a:hover {
+    color: #ffd700;
+}
+section {
+    padding: 30px 20px;
+}
+.gallery {
+    text-align: center;
+}
+.gallery figure {
+    display: inline-block;
+    margin: 20px;
+    cursor: pointer;
+}
+.gallery img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.7);
+}
+.gallery figcaption {
+    margin-top: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #ffd700;
+    font-family: 'Courier New', Courier, monospace;
+}
+.friend-description {
+    display: none;
+    max-width: 800px;
+    margin: 40px auto;
+    background-color: rgba(0,0,0,0.8);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.7);
+    line-height: 1.8;
+}
+.friend-description h2 {
+    color: #ffd700;
+    margin-bottom: 15px;
+    font-size: 2em;
+}
+.friend-description p {
+    color: #f1f1f1;
+    font-size: 1.1em;
+}
+</style>
+</head>
+<body>
+
+<header>Welcome to My Room</header>
+
+<section id="Gallery">
+    <h2 style="text-align:center; color:#ffd700;">Gallery</h2>
+    <div class="gallery">
+        <figure onclick="showFriend('abdulla')">
+            <img src="images/abdulla.jpeg" alt="Abdulla">
+            <figcaption>Abdulla</figcaption>
+        </figure>
+        <figure onclick="showFriend('aravind')">
+            <img src="images/aravind2.jpeg" alt="Aravind">
+            <figcaption>Aravind</figcaption>
+        </figure>
+        <figure onclick="showFriend('charan')">
+            <img src="images/charan.jpeg" alt="Charan">
+            <figcaption>Charan</figcaption>
+        </figure>
+        <figure onclick="showFriend('hariprasad')">
+            <img src="images/hari.jpeg" alt="Hari Prasad">
+            <figcaption>Hari Prasad</figcaption>
+        </figure>
+        <figure onclick="showFriend('narasimha')">
+            <img src="images/narasimha.jpeg" alt="Narasimha">
+            <figcaption>Narasimha</figcaption>
+        </figure>
+        <figure onclick="showFriend('singaraju')">
+            <img src="images/singa.jpeg" alt="Singaraju">
+            <figcaption>Singaraju</figcaption>
+        </figure>
+    </div>
+
+    <!-- Friend descriptions -->
+    <div id="abdulla" class="friend-description">
+        <h2>Abdulla - CSE</h2>
+        <p>
+        Abdulla is one of the most humble and intelligent people I know. He always approaches problems logically and never hesitates to help others when they are stuck. His calm demeanor makes him approachable and trustworthy among friends. In academics, he consistently performs well and shows dedication in his work. Beyond studies, Abdulla has a variety of interests including reading, coding, and learning new technologies. He has a great sense of humor and often lightens up the mood in our group. People admire him for his patience and kindness. He also encourages others to perform better and motivates everyone around him. Abdulla is a true team player, always supporting others in both small and big tasks. In short, he is someone everyone feels lucky to know and befriend.
+        </p>
+    </div>
+
+    <div id="aravind" class="friend-description">
+        <h2>Aravind - ECE</h2>
+        <p>
+        That’s me – Aravind, from ECE! I am always curious about electronics, coding, and new technology trends. I try to balance academics with hobbies like playing cricket and exploring creative projects. I like to solve challenging problems and enjoy learning concepts in depth rather than just superficially. Among friends, I am known to be approachable and helpful, always willing to guide anyone who needs support. I enjoy participating in competitions and trying out experiments that expand my knowledge. Creativity and innovation motivate me, and I am always looking for new ways to apply what I learn practically. I like to maintain a positive outlook and encourage friends to think positively too. At the same time, I am conscious about improving myself daily and setting goals for the future. My friends know me as someone reliable and hardworking who also enjoys fun and laughter. Overall, I try to make the most out of my college experience while staying grounded and humble.
+        </p>
+    </div>
+
+    <div id="charan" class="friend-description">
+        <h2>Charan - CSE</h2>
+        <p>
+        Charan is a deeply logical thinker and often approaches life in a structured way. He is a spiritually-minded person and sometimes reflects deeply on life and personal growth. Academically, he is intelligent and methodical, often helping friends solve difficult problems. Charan also has a creative side and enjoys exploring new ideas and perspectives. Despite his logical approach, he is compassionate and always ready to lend an ear when someone needs advice. He is known for his patience and calmness in stressful situations. Charan enjoys group discussions and often contributes insightful points that help the team think differently. His balance of logic and spirituality makes him a unique person in our friend circle. Additionally, he respects everyone’s opinions and encourages open-mindedness. He is someone who brings both wisdom and positivity wherever he goes.
+        </p>
+    </div>
+
+    <div id="hariprasad" class="friend-description">
+        <h2>Hari Prasad - Civil</h2>
+        <p>
+        Hari Prasad is a person of good nature, strong character, and intelligence. He is reliable and always willing to help friends and classmates in need. His presence in a group brings positivity and energy. Academically, he is hardworking and dedicated to achieving his goals. Hari Prasad is also physically active and enjoys sports, which keeps him energetic and focused. His leadership qualities often shine when working on team projects. Beyond academics, he maintains strong personal values and always stands by what is right. He is friendly, approachable, and easily makes connections with people around him. His sense of humor and cheerful personality make him a joy to be around. In essence, Hari Prasad is someone you can count on in all situations, both in studies and life.
+        </p>
+    </div>
+
+    <div id="narasimha" class="friend-description">
+        <h2>Narasimha - ECE</h2>
+        <p>
+        Narasimha is one of the most down-to-earth people I know. Despite being excellent at studies and highly intelligent, he remains humble and approachable. He is a loyal friend who goes out of his way to help others, whether in academics, personal matters, or group activities. Narasimha has a calm personality and maintains a positive attitude in most situations. He is curious and always keen to learn new things, especially related to technology and engineering. He balances work and fun, making him enjoyable company in both serious and casual settings. His honesty and dedication earn him respect from everyone around him. Narasimha is also creative and often comes up with innovative solutions to problems. Overall, he is a thoughtful, kind-hearted, and reliable friend who values relationships deeply.
+        </p>
+    </div>
+
+    <div id="singaraju" class="friend-description">
+        <h2>Singaraju - No Branch</h2>
+        <p>
+        Singaraju may not have followed a traditional academic path and can sometimes be lazy, but he has unique talents that make him special. He is excellent in sports and has a natural ability in certain practical skills. Despite his academic challenges, Singaraju has a creative approach to problem-solving in his areas of interest. He is funny, easy-going, and brings laughter to the group. He is loyal to friends and can be trusted in personal matters. Singaraju often surprises everyone with his skills in unexpected areas. His carefree attitude makes him enjoyable to be around, and he has a unique perspective on life. While he may struggle in academics, his practical abilities, social skills, and enthusiasm balance it out. He is a reminder that everyone has their strengths and contributes in their own way.
+        </p>
+    </div>
+</section>
+
+<script>
+function showFriend(friendId) {
+    // Hide all friend descriptions
+    const friends = document.querySelectorAll('.friend-description');
+    friends.forEach(f => f.style.display = 'none');
+
+    // Show the selected friend
+    document.getElementById(friendId).style.display = 'block';
+
+    // Scroll smoothly to the description
+    document.getElementById(friendId).scrollIntoView({ behavior: 'smooth' });
+}
+</script>
+
+</body>
+</html>
